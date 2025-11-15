@@ -5,12 +5,12 @@ body {
   color: #333;
 }
 
-
 .login-section {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 20px;
 }
 
 .main {
@@ -20,6 +20,7 @@ body {
   padding: 40px;
   width: 350px;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
 .login-logo {
@@ -34,7 +35,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.sub{
+.sub {
   font-size: 0.9rem;
   color: #666;
   margin-bottom: 25px;
@@ -44,7 +45,6 @@ h2 {
   color: sandybrown;
   font-weight: 600;
 }
-
 
 .login-form {
   display: flex;
@@ -63,6 +63,7 @@ input {
   border: 1px solid #ccc;
   margin-bottom: 15px;
   outline: none;
+  font-size: 0.95rem;
 }
 
 input:focus {
@@ -78,7 +79,7 @@ button {
   padding: 10px 20px;
   cursor: pointer;
   font-weight: 600;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 button:hover {
@@ -86,7 +87,6 @@ button:hover {
   color: #f4a460;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-
 
 .signup {
   text-align: center;
@@ -102,4 +102,66 @@ button:hover {
 
 .signup a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 80%;
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .sub {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-section {
+    padding: 10px;
+  }
+
+  .main {
+    width: 100%;
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  .login-logo {
+    width: 60px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .sub {
+    font-size: 0.85rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .signup {
+    font-size: 0.85rem;
+  }
 }

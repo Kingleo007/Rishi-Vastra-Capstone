@@ -119,11 +119,11 @@
   color: sandybrown;
   font-family: 'Playfair Display', serif;
 }
-.testimonials {
+.reviews {
   text-align: center;
   padding: 60px 20px;
 }
-.testimonial-grid {
+.review-grid {
   display: grid;
   gap: 20px;
   max-width: 800px;
@@ -142,22 +142,22 @@ blockquote span {
   color: #555;
   font-weight: bold;
 }
-.newsletter {
+.updates {
   text-align: center;
   padding: 60px 20px;
   background: linear-gradient(to right, #f4a460, #ffd700);
   color: white;
 }
-.newsletter form {
+.updates form {
   margin-top: 20px;
 }
-.newsletter input {
+.updates input {
   padding: 10px 20px;
   border: none;
   border-radius: 30px;
   width: 250px;
 }
-.newsletter button {
+.updates button {
   background: white;
   color: #f4a460;
   border: none;
@@ -214,3 +214,65 @@ blockquote span {
   text-align: center;
   padding: 15px;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+  .hero-overlay h2 {
+    font-size: 2rem;
+  }
+  .updates input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 300px;
+  }
+  .hero-overlay h2 {
+    font-size: 1.5rem;
+  }
+  .collections, .about, .reviews, .contact {
+    padding: 40px 15px;
+  }
+  .updates input {
+    width: 150px;
+  }
+  .updates button {
+    padding: 8px 15px;
+  }
+}
+
+.collection-card {
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.collection-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.collection-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.collection-card:hover img {
+  opacity: 0.9;
+}
+
+.collection-card p {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.collection-card:hover p {
+  color: sandybrown;
+}
+
