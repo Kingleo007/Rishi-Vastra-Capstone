@@ -1,0 +1,83 @@
+
+.about-page {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px 60px;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-hero-inner h2 {
+  color: sandybrown;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.about-hero-inner p {
+  line-height: 1.6;
+  color: #333;
+  font-size: 1.05rem;
+}
+
+.about-hero-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.mission-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.mission-values .card {
+  background: #fff8dc;
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 5px solid #f4a460;
+}
+
+.mission-values h3 {
+  margin-top: 0;
+  color: #8a4b1a;
+}
+
+.more {
+  background: linear-gradient(to right, rgba(244,164,96,0.12), rgba(255,215,0,0.06));
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  background: linear-gradient(to right, #f4a460, #ffd700);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .about-hero { grid-template-columns: 1fr; }
+  .mission-values { grid-template-columns: 1fr; }
+
+}
+
+@media (max-width: 480px) {
+  .team-grid { grid-template-columns: 1fr; }
+  .about-hero-img { height: 200px; }
+}
