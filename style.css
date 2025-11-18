@@ -3,25 +3,30 @@ body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #fffdd0, white);
   color: #333;
-  transition: background 0.4s ease;
 }
-
 .header {
   text-align: center;
   padding: 20px;
   transition: padding 0.3s ease;
 }
-
 .logo {
   width: 100px;
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
+.logo:hover{
+  transform: rotate(360deg);
+  
+}
 
 .brand {
   color: sandybrown;
   text-shadow: 2px 2px 4px yellow;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition: color 1s ease, text-shadow 1s ease;
+}
+.brand:hover{
+    color: red;
+    
 }
 
 .slogan {
@@ -29,19 +34,18 @@ body {
   font-style: italic;
   text-shadow: 1px 1px black;
   font-weight: bold;
-  transition: text-shadow 0.3s ease;
 }
 
 .nav a {
   margin: 0 10px;
   color: black;
-  text-decoration: none;
+  text-decoration:none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
-
 .nav a:hover {
   color: sandybrown;
+  
 }
 
 .hero {
@@ -69,7 +73,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s ease;
 }
 
 .hero-overlay h2 {
@@ -88,19 +91,18 @@ body {
   border-radius: 50px;
   cursor: pointer;
   font-size: 1.1rem;
-  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .hero-overlay button:hover {
-  background: white;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-  transform: translateY(-3px);
+  background: pink;
+  color: white;
+  box-shadow: 0 0 20px rgb(0,0,0);
+  transform: translate(3px,3px);
 }
 
 .collections {
   text-align: center;
   padding: 60px 20px;
-  transition: padding 0.3s ease;
 }
 
 .underline {
@@ -108,11 +110,11 @@ body {
   height: 4px;
   background: #ffd700;
   margin: 10px auto 30px;
-  transition: width 0.4s ease;
+  transition: width 10s ease;
 }
 
 .collections:hover .underline {
-  width: 140px;
+  width: 1400px;
 }
 
 .collection-grid {
@@ -124,18 +126,20 @@ body {
 .collection-card img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: opacity 0.45s ease, transform 0.45s ease;
+  box-shadow: 0 4px 10px rgb(0,0,0);
+  transition: transform 0.5s ease;
+
 }
 
 .collection-card:hover img {
   transform: scale(1.05);
+  transform: rotate(1deg);
 }
 
 .collection-card p {
   margin-top: 10px;
   font-weight: 500;
-  transition: color 0.35s ease, transform 0.45s ease;
+  transition: color 0.45s ease, transform 0.45s ease;
 }
 
 .collection-card:hover p {
@@ -162,7 +166,6 @@ body {
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.9);
-  transition: background 0.3s ease;
 }
 
 .about-content {

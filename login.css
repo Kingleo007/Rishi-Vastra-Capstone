@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   background: linear-gradient(to bottom, #fffdd0, white);
   color: #333;
 }
 
-.login-section {
+.login {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,6 @@ body {
   padding: 40px;
   width: 350px;
   text-align: center;
-  transition: all 0.3s ease;
 }
 
 .login-logo {
@@ -31,7 +30,7 @@ body {
 
 h2 {
   color: sandybrown;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display';
   margin-bottom: 10px;
 }
 
@@ -41,7 +40,7 @@ h2 {
   margin-bottom: 25px;
 }
 
-.brand {
+.name {
   color: sandybrown;
   font-weight: 600;
 }
@@ -65,12 +64,9 @@ input {
   outline: none;
   font-size: 0.95rem;
 }
-
 input:focus {
   border-color: sandybrown;
-  box-shadow: 0 0 5px rgba(244,164,96,0.5);
 }
-
 button {
   background: linear-gradient(to right, #f4a460, #ffd700);
   color: white;
@@ -93,23 +89,23 @@ button:hover {
   margin-top: 15px;
   font-size: 0.9rem;
 }
-
 .signup a {
   color: sandybrown;
   text-decoration: none;
   font-weight: 600;
 }
-
 .signup a:hover {
   text-decoration: underline;
 }
+
+
+
 
 @media screen and (max-width: 768px) {
   .main {
     width: 80%;
     padding: 30px;
   }
-
   h2 {
     font-size: 1.6rem;
   }
@@ -124,8 +120,10 @@ button:hover {
   }
 }
 
+
+
 @media screen and (max-width: 480px) {
-  .login-section {
+  .login {
     padding: 10px;
   }
 
