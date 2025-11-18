@@ -1,33 +1,43 @@
-   body {
+body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #fffdd0, white);
   color: #333;
+  transition: background 0.4s ease;
 }
 
 .header {
   text-align: center;
   padding: 20px;
+  transition: padding 0.3s ease;
 }
+
 .logo {
   width: 100px;
   border-radius: 50%;
+  transition: transform 0.3s ease;
 }
+
 .brand {
   color: sandybrown;
   text-shadow: 2px 2px 4px yellow;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
 .slogan {
   color: red;
   font-style: italic;
   text-shadow: 1px 1px black;
   font-weight: bold;
+  transition: text-shadow 0.3s ease;
 }
+
 .nav a {
   margin: 0 10px;
   color: black;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav a:hover {
@@ -39,11 +49,18 @@
   height: 600px;
   overflow: hidden;
 }
+
 .hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.6s ease;
 }
+
+.hero:hover .hero-img {
+  transform: scale(1.05);
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -52,13 +69,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: background 0.3s ease;
 }
+
 .hero-overlay h2 {
   color: white;
   font-size: 3rem;
   font-family: 'Playfair Display', serif;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  transition: text-shadow 0.3s ease;
 }
+
 .hero-overlay button {
   background: rgb(219, 156, 40);
   color: black;
@@ -67,35 +88,62 @@
   border-radius: 50px;
   cursor: pointer;
   font-size: 1.1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
+
 .hero-overlay button:hover {
   background: white;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  transform: translateY(-3px);
 }
+
 .collections {
   text-align: center;
   padding: 60px 20px;
+  transition: padding 0.3s ease;
 }
+
 .underline {
   width: 100px;
   height: 4px;
   background: #ffd700;
   margin: 10px auto 30px;
+  transition: width 0.4s ease;
 }
+
+.collections:hover .underline {
+  width: 140px;
+}
+
 .collection-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
+
 .collection-card img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: opacity 0.45s ease, transform 0.45s ease;
 }
+
+.collection-card:hover img {
+  transform: scale(1.05);
+}
+
 .collection-card p {
   margin-top: 10px;
   font-weight: 500;
+  transition: color 0.35s ease, transform 0.45s ease;
 }
+
+.collection-card:hover p {
+  transform: translateY(3px);
+  color: sandybrown; 
+}
+
+
 .about {
   position: relative;
   background-image: url("https://images.unsplash.com/photo-1761515315730-078ad40a3430?q=80&w=1080");
@@ -103,60 +151,94 @@
   background-position: center;
   padding: 80px 20px;
   color: #333;
+  transition: background-position 0.4s ease;
 }
+
+.about:hover {
+  background-position: center 20px;
+}
+
 .about-overlay {
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.9);
+  transition: background 0.3s ease;
 }
+
 .about-content {
   position: relative;
   max-width: 700px;
   margin: auto;
   text-align: center;
+  transition: transform 0.3s ease;
 }
+
+.about-content:hover {
+  transform: translateY(-5px);
+}
+
 .about h2 {
   color: sandybrown;
   font-family: 'Playfair Display', serif;
+  transition: color 0.3s ease;
 }
+
 .reviews {
   text-align: center;
   padding: 60px 20px;
 }
+
 .review-grid {
   display: grid;
   gap: 20px;
   max-width: 800px;
   margin: 30px auto;
 }
+
 blockquote {
   background: #fff8dc;
   border-left: 5px solid #f4a460;
   padding: 20px;
   border-radius: 10px;
   font-style: italic;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
+blockquote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
 blockquote span {
   display: block;
   margin-top: 10px;
   color: #555;
   font-weight: bold;
 }
+
 .updates {
   text-align: center;
   padding: 60px 20px;
   background: linear-gradient(to right, #f4a460, #ffd700);
   color: white;
 }
+
 .updates form {
   margin-top: 20px;
 }
+
 .updates input {
   padding: 10px 20px;
   border: none;
   border-radius: 30px;
   width: 250px;
+  transition: box-shadow 0.3s ease;
 }
+
+.updates input:focus {
+  box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
 .updates button {
   background: white;
   color: #f4a460;
@@ -165,33 +247,47 @@ blockquote span {
   padding: 10px 25px;
   margin-left: 10px;
   cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
+.updates button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
 .social {
   text-align: center;
   padding: 60px 20px;
 }
+
 .social-icons a {
   margin: 0 10px;
   color: #f4a460;
   font-weight: 500;
   text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
+
 .social-icons a:hover {
   text-decoration: underline;
 }
+
 .contact {
   background: #fff8dc;
   text-align: center;
   padding: 60px 20px;
 }
+
 .contact-info {
   margin-bottom: 30px;
 }
+
 .contact-form {
   max-width: 500px;
   margin: auto;
   text-align: left;
 }
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -199,7 +295,14 @@ blockquote span {
   margin-bottom: 15px;
   border-radius: 8px;
   border: 1px solid #ccc;
+  transition: box-shadow 0.3s ease;
 }
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 10px rgba(244,164,96,0.5);
+}
+
 .contact-form button {
   background: linear-gradient(to right, #f4a460, #ffd700);
   color: white;
@@ -207,7 +310,14 @@ blockquote span {
   border-radius: 30px;
   padding: 10px 20px;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.contact-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
 .footer {
   background: #333;
   color: white;
@@ -215,64 +325,6 @@ blockquote span {
   padding: 15px;
 }
 
-@media (max-width: 768px) {
-  .hero {
-    height: 400px;
-  }
-  .hero-overlay h2 {
-    font-size: 2rem;
-  }
-  .updates input {
-    width: 200px;
-  }
+.footer:hover {
+  background: #222;
 }
-
-@media (max-width: 480px) {
-  .hero {
-    height: 300px;
-  }
-  .hero-overlay h2 {
-    font-size: 1.5rem;
-  }
-  .collections, .about, .reviews, .contact {
-    padding: 40px 15px;
-  }
-  .updates input {
-    width: 150px;
-  }
-  .updates button {
-    padding: 8px 15px;
-  }
-}
-
-.collection-card {
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.collection-card img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.collection-card:hover {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.collection-card:hover img {
-  opacity: 0.9;
-}
-
-.collection-card p {
-  text-align: center;
-  font-weight: 600;
-  margin-top: 10px;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-.collection-card:hover p {
-  color: sandybrown;
-}
-
