@@ -333,3 +333,23 @@ blockquote span {
 .footer:hover {
   background: #222;
 }
+
+
+#go_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: sandybrown;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  display: none; 
+  transition: opacity 0.3s ease;
+}
+
+#go_top:hover {
+  background: #ffb464;
+}

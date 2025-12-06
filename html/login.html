@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
   <section class="login">
@@ -14,7 +14,12 @@
       <h2>Welcome Back</h2>
 
       <p class="sub">Log in to continue your journey with <span class="name">RishiVastra</span></p>
-      <form class="login-form">
+
+
+
+      <form class="login-form" action="../html/index.html">
+
+        <div id="error"></div>
 
         <label for="email">Email</label>
         <input type="email" id="email" placeholder="Enter my email if you know" required>
@@ -26,9 +31,12 @@
 
         <button type="submit">Login</button>
         <p class="signup">Want a new account? <a href="index.html">Sign up</a></p>
+
       </form>
 
     </div>
   </section>
+
+  <script src="../Js/login.js"></script>
 </body>
 </html>
