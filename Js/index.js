@@ -1,15 +1,3 @@
-const header = document.querySelector(".header");
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    header.style.background = "rgba(255, 255, 255, 0.9)";
-    header.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
-  } else {
-    header.style.background = "transparent";
-  }
-});
-
-
-
 const go_top = document.querySelector("#go_top");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 200) {
