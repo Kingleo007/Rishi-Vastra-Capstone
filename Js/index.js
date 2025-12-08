@@ -19,15 +19,15 @@ window.addEventListener("scroll", () => {
   }
 });
 go_top.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0});
 });
 
 
-// const themeToggle = document.querySelector("#theme-toggle");
+// const themeToggle = document.getElementById("theme-toggle");
 
 // themeToggle.addEventListener("click", () => {
 //   document.body.classList.toggle("dark");
-// });
+// });\
 
 const contact = document.querySelector(".contact-form");
 const name = document.getElementById("name");
@@ -39,11 +39,11 @@ contact.addEventListener("submit", function (e) {
 
   const userName = name.value;
   const userMessage = message.value;
-  console.log("Name:", userName);
-  console.log("Message:", userMessage);
   output.innerHTML = `
     <p><b>Submitted Name:</b> ${userName}</p>
     <p><b>Submitted Message:</b> ${userMessage}</p>
   `;
   contact.reset();
 });
+
+
